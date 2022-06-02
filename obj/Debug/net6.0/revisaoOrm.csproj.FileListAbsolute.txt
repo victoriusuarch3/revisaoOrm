@@ -1,5 +1,0 @@
-C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\obj\Debug\net6.0\revisaoOrm.csproj.AssemblyReference.cache
-C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\obj\Debug\net6.0\revisaoOrm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\obj\Debug\net6.0\revisaoOrm.AssemblyInfoInputs.cache
-C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\obj\Debug\net6.0\revisaoOrm.AssemblyInfo.cs
-C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\obj\Debug\net6.0\revisaoOrm.csproj.CoreCompileInputs.cache

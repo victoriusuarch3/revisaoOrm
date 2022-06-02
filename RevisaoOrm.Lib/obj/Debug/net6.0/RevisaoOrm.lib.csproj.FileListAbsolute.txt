@@ -1,0 +1,12 @@
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.csproj.AssemblyReference.cache
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.AssemblyInfoInputs.cache
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.AssemblyInfo.cs
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.csproj.CoreCompileInputs.cache
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\bin\Debug\net6.0\RevisaoOrm.lib.deps.json
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\bin\Debug\net6.0\RevisaoOrm.lib.dll
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\bin\Debug\net6.0\RevisaoOrm.lib.pdb
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.dll
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\refint\RevisaoOrm.lib.dll
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\RevisaoOrm.lib.pdb
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.lib\obj\Debug\net6.0\ref\RevisaoOrm.lib.dll

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using RevisaoOrm.Lib.Classes;
+using RevisaoOrm.Lib.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Add services to the container.
+builder.Services.AddDbContext<RevisaoOrmContext>
+(conn => conn.UseNpgsql(builder.Configuration.GetConnectionString("revisaoOrm")));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

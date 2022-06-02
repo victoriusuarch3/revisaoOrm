@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoOrm.web", "RevisaoOrm.web\RevisaoOrm.web.csproj", "{ABC777DF-0D10-4158-82D7-E92BEAC1D420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevisaoOrm.lib", "RevisaoOrm.lib\RevisaoOrm.lib.csproj", "{6508589C-101E-4C82-8F13-F738ED58190F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC777DF-0D10-4158-82D7-E92BEAC1D420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC777DF-0D10-4158-82D7-E92BEAC1D420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC777DF-0D10-4158-82D7-E92BEAC1D420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC777DF-0D10-4158-82D7-E92BEAC1D420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6508589C-101E-4C82-8F13-F738ED58190F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6508589C-101E-4C82-8F13-F738ED58190F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6508589C-101E-4C82-8F13-F738ED58190F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6508589C-101E-4C82-8F13-F738ED58190F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
