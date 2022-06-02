@@ -26,15 +26,15 @@ namespace RevisaoOrm.Lib.Data
             modelBuilder.Entity<Produtos>().HasKey(key => key.Id);
             modelBuilder.Entity<Produtos>().HasOne(x => x.Vendedor).WithMany(x => x.ListaProdutos).HasForeignKey(x => x.IdVendedor);
 
-            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("ProdutosXPedidos");
+            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("Produtos_X_PPedidos");
             modelBuilder.Entity<Produtos_X_Pedidos>().HasKey(key => key.Id);
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Produtos).WithMany(x => x.ProdutosXPedidos).HasForeignKey(x => x.IdProduto);
+            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Produtos).WithMany(x => x.Produtos_X_PPedidos).HasForeignKey(x => x.IdProduto);
                                                     
                                                     
 
-            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("ProdutosXPedidos");
+            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("Produtos_X_PPedidos");
             modelBuilder.Entity<Produtos_X_Pedidos>().HasKey(key => key.Id);
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Pedidos).WithMany(x => x.ProdutosXPedidos).HasForeignKey(x => x.IdPedido);
+            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Pedidos).WithMany(x => x.Produtos_X_PPedidos).HasForeignKey(x => x.IdPedido);
                                                     
                                                     
         }
@@ -44,6 +44,6 @@ namespace RevisaoOrm.Lib.Data
         public DbSet<Transportadores> Transportadores { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Vendedores> Vendedores { get; set; }
-        public DbSet<Produtos_X_Pedidos> ProdutosXPedidos { get; set; }
+        public DbSet<Produtos_X_Pedidos> Produtos_X_Pedidos { get; set; }
     }
 }
