@@ -14,7 +14,8 @@ var app = builder.Build();
 
 // Add services to the container.
 builder.Services.AddDbContext<RevisaoOrmContext>
-(conn => conn.UseNpgsql(builder.Configuration.GetConnectionString("revisaoOrm")));
+(conn => conn.UseNpgsql(builder.Configuration.GetConnectionString("revisaoOrm")).UseSnakeCaseNamingConvention());
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

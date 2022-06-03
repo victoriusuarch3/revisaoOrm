@@ -7,6 +7,8 @@ namespace revisaoOrm.Classes
         public string Descricao {get; set;}
         public float Valor {get; set;}
         public DateTime Data_Cadastro {get; set;}
-        public int Id_Vendedor {get; set;}
+        public int IdVendedor {get; set;}
+        public Vendedores Vendedor {get; set;}
+        public List<Produtos_X_Pedidos> Produtos_X_Pedidos { get; set; }
     }
 }

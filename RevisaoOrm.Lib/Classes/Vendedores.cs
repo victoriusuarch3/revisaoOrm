@@ -7,5 +7,6 @@ namespace revisaoOrm.Classes
         public string Email {get; set;}
         public string Cnpj {get; set;}
         public DateTime Data_Cadastro{get; set;}
+        public List<Produtos> ListaProdutos { get; set; }
     }
 }
