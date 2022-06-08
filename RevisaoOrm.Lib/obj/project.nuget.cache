@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9ta/2jBETe2UCWH+XmyGOSmx2h2ArDQ+6ogATDq5QPMWyRBxcbq7eBw7jkUAVkY7qJDECp973+qwLy8DPCQECA==",
+  "dgSpecHash": "57tg57fk2ITHkRHhPr6grWYDdGMsTLUlNBud8BCOtUk3vYnfE9C/RB9W7lL/vrtqu1CWG4FZi8Xr3wRRYPpDDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.lib\\RevisaoOrm.lib.csproj",
+  "projectFilePath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Lib\\RevisaoOrm.lib.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\YXTR\\.nuget\\packages\\efcore.namingconventions\\6.0.0\\efcore.namingconventions.6.0.0.nupkg.sha512",
     "C:\\Users\\YXTR\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\YXTR\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\YXTR\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",

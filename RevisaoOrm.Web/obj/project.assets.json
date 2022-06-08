@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "EFCore.NamingConventions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/6.0.4": {
         "type": "package",
         "dependencies": {
@@ -319,6 +333,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "EFCore.NamingConventions": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4"
         },
         "compile": {
@@ -331,6 +346,18 @@
     }
   },
   "libraries": {
+    "EFCore.NamingConventions/6.0.0": {
+      "sha512": "ij0Z59hA3hattuY+FFmfGhJwLmSw8uz/+01lMRnD5YOYJM7hN7JJUZ92U3rZL6nTJQL5xOf7Rt39zdeNSloImw==",
+      "type": "package",
+      "path": "efcore.namingconventions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "efcore.namingconventions.6.0.0.nupkg.sha512",
+        "efcore.namingconventions.nuspec",
+        "lib/net6.0/EFCore.NamingConventions.dll"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/6.0.4": {
       "sha512": "gTh3SJsF5WNjEmG32kYc3U4tjeTIv55QOrwHAJcF/xtrIVMteDHMArGC35N0dw86WFY0v8yFkKYKOIOln4jkfQ==",
       "type": "package",
@@ -850,12 +877,13 @@
     },
     "RevisaoOrm.lib/1.0.0": {
       "type": "project",
-      "path": "../RevisaoOrm.lib/RevisaoOrm.lib.csproj",
-      "msbuildProject": "../RevisaoOrm.lib/RevisaoOrm.lib.csproj"
+      "path": "../RevisaoOrm.Lib/RevisaoOrm.lib.csproj",
+      "msbuildProject": "../RevisaoOrm.Lib/RevisaoOrm.lib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "EFCore.NamingConventions >= 6.0.0",
       "RevisaoOrm.lib >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -866,11 +894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.web\\RevisaoOrm.web.csproj",
+      "projectUniqueName": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Web\\RevisaoOrm.web.csproj",
       "projectName": "RevisaoOrm.web",
-      "projectPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.web\\RevisaoOrm.web.csproj",
+      "projectPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Web\\RevisaoOrm.web.csproj",
       "packagesPath": "C:\\Users\\YXTR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.web\\obj\\",
+      "outputPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\YXTR\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -885,8 +913,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.lib\\RevisaoOrm.lib.csproj": {
-              "projectPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.lib\\RevisaoOrm.lib.csproj"
+            "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Lib\\RevisaoOrm.lib.csproj": {
+              "projectPath": "C:\\Users\\YXTR\\Desktop\\projetosOOP\\revisaoOrm\\RevisaoOrm.Lib\\RevisaoOrm.lib.csproj"
             }
           }
         }
@@ -901,6 +929,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "EFCore.NamingConventions": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"

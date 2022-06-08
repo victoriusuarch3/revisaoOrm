@@ -9,6 +9,6 @@ namespace revisaoOrm.Classes
         public DateTime Data_Cadastro {get; set;}
         public int IdVendedor {get; set;}
         public Vendedores Vendedor {get; set;}
-        public List<Produtos_X_Pedidos> Produtos_X_Pedidos { get; set; }
+        public List<ProdutosXPedidos> ProdutosXPedidos { get; set; }
     }
 }

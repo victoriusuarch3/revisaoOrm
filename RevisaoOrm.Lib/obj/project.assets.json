@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "EFCore.NamingConventions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/EFCore.NamingConventions.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/6.0.4": {
         "type": "package",
         "dependencies": {
@@ -247,6 +261,18 @@
     }
   },
   "libraries": {
+    "EFCore.NamingConventions/6.0.0": {
+      "sha512": "ij0Z59hA3hattuY+FFmfGhJwLmSw8uz/+01lMRnD5YOYJM7hN7JJUZ92U3rZL6nTJQL5xOf7Rt39zdeNSloImw==",
+      "type": "package",
+      "path": "efcore.namingconventions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "efcore.namingconventions.6.0.0.nupkg.sha512",
+        "efcore.namingconventions.nuspec",
+        "lib/net6.0/EFCore.NamingConventions.dll"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/6.0.4": {
       "sha512": "gTh3SJsF5WNjEmG32kYc3U4tjeTIv55QOrwHAJcF/xtrIVMteDHMArGC35N0dw86WFY0v8yFkKYKOIOln4jkfQ==",
       "type": "package",
@@ -642,6 +668,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "EFCore.NamingConventions >= 6.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.4"
     ]
   },
@@ -682,6 +709,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "EFCore.NamingConventions": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[6.0.4, )"

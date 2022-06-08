@@ -5,7 +5,7 @@ namespace RevisaoOrm.Lib.Data
 {
     public class RevisaoOrmContext : DbContext
     {
-        public RevisaoOrmContext(DbContext context) : base()
+        public RevisaoOrmContext(DbContextOptions context) : base(context)
         {
 
         }
@@ -16,27 +16,29 @@ namespace RevisaoOrm.Lib.Data
 
             modelBuilder.Entity<Pedidos>().ToTable("Pedidos");
             modelBuilder.Entity<Pedidos>().HasKey(key => key.Id);
+            modelBuilder.Entity<Pedidos>().Property(key => key.IdUsuario).HasColumnName("id_usuarios");
             modelBuilder.Entity<Pedidos>().HasOne(x => x.Transportadora).WithMany(x => x.Pedidos).HasForeignKey(x => x.IdTransportadora);
             modelBuilder.Entity<Pedidos>().HasOne(x => x.Usuario).WithMany(x => x.PegarPedidos).HasForeignKey(x => x.IdUsuario);
-            modelBuilder.Entity<Pedidos>().HasMany(x => x.Produtos_X_Pedidos).WithOne(x => x.Pedido);
+            modelBuilder.Entity<Pedidos>().HasMany(x => x.ProdutosXPedidos).WithOne(x => x.Pedido);
 
             modelBuilder.Entity<Produtos>().ToTable("Produtos");
             modelBuilder.Entity<Produtos>().HasKey(key => key.Id);
             modelBuilder.Entity<Produtos>().HasOne(x => x.Vendedor).WithMany(x => x.ListaProdutos).HasForeignKey(x => x.IdVendedor);
 
-            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("Produtos_X_Pedidos");
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasKey(key => key.Id);
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Produto).WithMany(x => x.Produtos_X_Pedidos).HasForeignKey(x => x.IdProduto);
+            modelBuilder.Entity<ProdutosXPedidos>().ToTable("ProdutosXPedidos");
+            modelBuilder.Entity<ProdutosXPedidos>().HasKey(key => key.Id);
+            modelBuilder.Entity<ProdutosXPedidos>().HasOne(x => x.Produto).WithMany(x => x.ProdutosXPedidos).HasForeignKey(x => x.IdProduto);
                                                                                                        
-            modelBuilder.Entity<Produtos_X_Pedidos>().ToTable("Produtos_X_Pedidos");
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasKey(key => key.Id);
-            modelBuilder.Entity<Produtos_X_Pedidos>().HasOne(x => x.Pedido).WithMany(x => x.Produtos_X_Pedidos).HasForeignKey(x => x.IdPedido);                                       
+            modelBuilder.Entity<ProdutosXPedidos>().ToTable("ProdutosXPedidos");
+            modelBuilder.Entity<ProdutosXPedidos>().HasKey(key => key.Id);
+            modelBuilder.Entity<ProdutosXPedidos>().HasOne(x => x.Pedido).WithMany(x => x.ProdutosXPedidos).HasForeignKey(x => x.IdPedido);                                       
 
             modelBuilder.Entity<Transportadores>().ToTable("Transportadores");
             modelBuilder.Entity<Transportadores>().HasKey(key => key.Id);
             modelBuilder.Entity<Transportadores>().HasMany(x => x.Pedidos).WithOne(x => x.Transportadora);
 
             modelBuilder.Entity<Usuarios>().ToTable("Usuarios");
+            modelBuilder.Entity<Usuarios>().Property(key => key.Id).HasColumnName("ID_Usuarios");
             modelBuilder.Entity<Usuarios>().HasKey(key => key.Id);
             modelBuilder.Entity<Usuarios>().HasMany(x => x.PegarPedidos).WithOne(x => x.Usuario);
 
@@ -50,6 +52,7 @@ namespace RevisaoOrm.Lib.Data
         public DbSet<Transportadores> Transportadores { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Vendedores> Vendedores { get; set; }
-        public DbSet<Produtos_X_Pedidos> Produtos_X_Pedidos { get; set; }
+        public DbSet<ProdutosXPedidos> ProdutosXPedidos { get; set; }
+        public object Transportadoras { get; set; }
     }
 }

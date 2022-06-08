@@ -33,3 +33,4 @@ C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.web\obj\Debug\net6.0\ref
 C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.web\obj\Debug\net6.0\RevisaoOrm.web.pdb
 C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.web\obj\Debug\net6.0\RevisaoOrm.web.genruntimeconfig.cache
 C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.web\obj\Debug\net6.0\ref\RevisaoOrm.web.dll
+C:\Users\YXTR\Desktop\projetosOOP\revisaoOrm\RevisaoOrm.Web\bin\Debug\net6.0\EFCore.NamingConventions.dll

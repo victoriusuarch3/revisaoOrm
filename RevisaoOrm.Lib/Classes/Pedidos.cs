@@ -9,8 +9,8 @@ namespace revisaoOrm.Classes
         public Usuarios Usuario {get; set;}
         public int IdTransportadora {get; set;}
         public int IdUsuario {get; set;}
-        public int IdProdutos_X_Pedidos {get; set;}
-        public List<Produtos_X_Pedidos> Produtos_X_Pedidos { get; set; }  
+        public int IdProdutosXPedidos {get; set;}
+        public List<ProdutosXPedidos> ProdutosXPedidos { get; set; }  
 
     }
 }

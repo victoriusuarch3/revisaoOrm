@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using RevisaoOrm.web;
 
-namespace ProjetoMercadoLivre.Web.Controllers;
+namespace RevisaoOrm.Web.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -11,16 +12,22 @@ public class WeatherForecastController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    public IActionResult OrmTestApi( int Id)
+    private readonly ILogger<WeatherForecastController> _logger;
+
+    public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
-        var usuario = _context.Usuarios.Find(id);
-        return Ok(usuario);
+        _logger = logger;
     }
 
-     [HttpGet("Other/{id}")]
-    public IActionResult GetTeste(int id)
+    [HttpGet(Name = "GetWeatherForecast")]
+    public IEnumerable<WeatherForecast> Get()
     {
-        var usuarios = _context.Usuarios.Update;
-        return Ok(usuarios);
+        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        {
+            Date = DateTime.Now.AddDays(index),
+            TemperatureC = Random.Shared.Next(-20, 55),
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        })
+        .ToArray();
     }
 }
